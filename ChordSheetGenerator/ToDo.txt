@@ -1,0 +1,15 @@
+ToDo Tasks
+----------
+Add header/footer support
+Lock/Use Capo and Key
+	When transposing, auto-determine the capo.
+	Toggle between capo and non-capo for printing.
+Add Use Flats/Sharps option (selectable by user instead of automatically determined)
+Design Icon
+Hide/Show View Pane
+Add page setup settings
+Add settings page for print view
+Add support for backgrounds (chorus/bridge sections)
+Add Help/About options
+Find/Replace 
+Allow tabs in text.

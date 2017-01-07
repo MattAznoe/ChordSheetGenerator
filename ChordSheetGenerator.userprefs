@@ -1,0 +1,31 @@
+﻿<Properties StartupItem="ChordSheetGenerator/ChordSheetGenerator.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChordSheetGenerator/MainWindow.cs">
+    <Files>
+      <File FileName="ChordSheetGenerator/MainWindow.cs" Line="3" Column="34" />
+      <File FileName="ChordSheetGenerator/ToDo.txt" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/PageRenderer.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/RGBA.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Enum.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Program.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/FontInfo.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Operations/Config.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Constants.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/SettingsDialog.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/AppSettings.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Operations/Extensions.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/PrintNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/TextNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Page.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/TextParameterNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/LineNode.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/matthew/Development/ChordSheetGenerator/ChordSheetGenerator/MainWindow.cs" line="1036" column="16" />
+      <Breakpoint file="/home/matthew/Development/ChordSheetGenerator/ChordSheetGenerator/Program.cs" line="23" column="9" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
