@@ -1,6 +1,5 @@
 ToDo Tasks
 ----------
-Add header/footer support
 Lock/Use Capo and Key
 	When transposing, auto-determine the capo.
 	Toggle between capo and non-capo for printing.
