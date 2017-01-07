@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{98098BC7-90EF-4203-A85B-81EEAE0BC72D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -67,7 +67,6 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Cairo" />
     <Reference Include="gtk-dotnet, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <Private>False</Private>
       <Package>gtk-dotnet-2.0</Package>
     </Reference>
   </ItemGroup>
@@ -93,19 +92,27 @@
     <Compile Include="Model\Enum.cs" />
     <Compile Include="Operations\Extensions.cs" />
     <Compile Include="Operations\EventManager.cs" />
-    <Compile Include="PageRenderer.cs" />
     <Compile Include="Model\FontInfo.cs" />
-    <Compile Include="Model\PrintNode.cs" />
-    <Compile Include="Model\Page.cs" />
     <Compile Include="SettingsDialog.cs" />
     <Compile Include="gtk-gui\CSGen.SettingsDialog.cs" />
     <Compile Include="Controls\FontSelectionGroup.cs" />
     <Compile Include="gtk-gui\CSGen.Controls.FontSelectionGroup.cs" />
     <Compile Include="Model\RGBA.cs" />
     <Compile Include="Model\AppSettings.cs" />
-    <Compile Include="Model\TextNode.cs" />
-    <Compile Include="Model\LineNode.cs" />
-    <Compile Include="Model\TextParameterNode.cs" />
+    <Compile Include="Model\Renderer\BaseNode.cs" />
+    <Compile Include="Model\Renderer\ChordBlockNode.cs" />
+    <Compile Include="Model\Renderer\CommandNode.cs" />
+    <Compile Include="Model\Renderer\ContainerNode.cs" />
+    <Compile Include="Model\Renderer\HeaderFooterNode.cs" />
+    <Compile Include="Model\Renderer\LineNode.cs" />
+    <Compile Include="Model\Renderer\PageNode.cs" />
+    <Compile Include="Model\Renderer\PageSettings.cs" />
+    <Compile Include="Model\Renderer\RegionNode.cs" />
+    <Compile Include="Model\Renderer\SpacerNode.cs" />
+    <Compile Include="Model\Renderer\TextNode.cs" />
+    <Compile Include="Model\RegionSettings.cs" />
+    <Compile Include="Operations\IPageRenderer.cs" />
+    <Compile Include="Operations\RenderEngine.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -113,6 +120,7 @@
     <Folder Include="Operations\" />
     <Folder Include="External Tools\" />
     <Folder Include="Controls\" />
+    <Folder Include="Model\Renderer\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ToDo.txt" />

@@ -1,9 +1,8 @@
 ﻿<Properties StartupItem="ChordSheetGenerator/ChordSheetGenerator.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ChordSheetGenerator/MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChordSheetGenerator/PageRenderer.cs">
     <Files>
-      <File FileName="ChordSheetGenerator/MainWindow.cs" Line="3" Column="34" />
-      <File FileName="ChordSheetGenerator/ToDo.txt" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/MainWindow.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/PageRenderer.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/Model/RGBA.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/Model/Enum.cs" Line="1" Column="1" />
@@ -19,6 +18,7 @@
       <File FileName="ChordSheetGenerator/Model/Page.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/Model/TextParameterNode.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/Model/LineNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/ToDo.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
