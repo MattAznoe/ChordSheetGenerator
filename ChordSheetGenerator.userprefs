@@ -1,31 +1,44 @@
-﻿<Properties StartupItem="ChordSheetGenerator/ChordSheetGenerator.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ChordSheetGenerator/PageRenderer.cs">
+﻿<Properties StartupConfiguration="{98098BC7-90EF-4203-A85B-81EEAE0BC72D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChordSheetGenerator Status">
     <Files>
-      <File FileName="ChordSheetGenerator/MainWindow.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/PageRenderer.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/Model/RGBA.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/Model/Enum.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/Program.cs" Line="1" Column="1" />
       <File FileName="ChordSheetGenerator/Model/FontInfo.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/Operations/Config.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Operations/Config.cs" Line="25" Column="1" />
       <File FileName="ChordSheetGenerator/Model/Constants.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/SettingsDialog.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/Model/AppSettings.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/Operations/Extensions.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/Model/PrintNode.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/Model/TextNode.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/Model/Page.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/Model/TextParameterNode.cs" Line="1" Column="1" />
-      <File FileName="ChordSheetGenerator/Model/LineNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/SettingsDialog.cs" Line="75" Column="23" />
+      <File FileName="ChordSheetGenerator/Operations/Extensions.cs" Line="140" Column="1" />
       <File FileName="ChordSheetGenerator/ToDo.txt" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/BaseNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/ChordBlockNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/CommandNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/ContainerNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/HeaderFooterNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/LineNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/PageNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/PageSettings.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/RegionNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/SpacerNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/Renderer/TextNode.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/SongData.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Operations/BindingLib.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Operations/FileOperations.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/AppSettings.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Model/RegionSettings.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Operations/IPageRenderer.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/Operations/RenderEngine.cs" Line="1" Column="1" />
+      <File FileName="ChordSheetGenerator/MainWindow.cs" Line="138" Column="52" />
+      <File FileName="ChordSheetGenerator Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/matthew/Development/ChordSheetGenerator/ChordSheetGenerator/MainWindow.cs" line="1036" column="16" />
-      <Breakpoint file="/home/matthew/Development/ChordSheetGenerator/ChordSheetGenerator/Program.cs" line="23" column="9" />
+      <Breakpoint file="/home/matthew/Development/ChordSheetGenerator/ChordSheetGenerator/Program.cs" relfile="ChordSheetGenerator/Program.cs" line="23" column="9" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ChordSheetGenerator PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

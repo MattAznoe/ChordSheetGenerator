@@ -178,7 +178,7 @@ namespace CSGen.Operations
         public static string Transpose(string text, TransposeDirection direction, int steps, bool useSharps)
         {
             // Get all of the chords in the song.
-            MatchCollection mc = Constants._reChord.Matches(text);
+            //MatchCollection mc = Constants._reChord.Matches(text);
 
             if (useSharps)
                 tx_Progression = Constants._chordProgressionSharp;

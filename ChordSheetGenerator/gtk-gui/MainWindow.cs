@@ -4,875 +4,876 @@
 public partial class MainWindow
 {
 	private global::Gtk.UIManager UIManager;
-	
+
 	private global::Gtk.Action FileAction;
-	
+
 	private global::Gtk.Action HelpAction;
-	
+
 	private global::Gtk.Action newAction;
-	
+
 	private global::Gtk.Action openAction;
-	
+
 	private global::Gtk.Action saveAction;
-	
+
 	private global::Gtk.Action saveAsAction;
-	
+
 	private global::Gtk.Action printPreviewAction;
-	
+
 	private global::Gtk.Action printAction;
-	
+
 	private global::Gtk.Action propertiesAction;
-	
+
 	private global::Gtk.Action ExitAction;
-	
+
 	private global::Gtk.Action openAction1;
-	
+
 	private global::Gtk.Action saveAction1;
-	
+
 	private global::Gtk.Action EditAction;
-	
+
 	private global::Gtk.Action ViewAction;
-	
+
 	private global::Gtk.ToggleAction SongInformationAction;
-	
+
 	private global::Gtk.ToggleAction TagChordBarAction;
-	
+
 	private global::Gtk.Action undoAction;
-	
+
 	private global::Gtk.Action redoAction;
-	
+
 	private global::Gtk.Action copyAction;
-	
+
 	private global::Gtk.Action cutAction;
-	
+
 	private global::Gtk.Action pasteAction;
-	
+
 	private global::Gtk.VBox mainPanel;
-	
+
 	private global::Gtk.HBox hbox17;
-	
+
 	private global::Gtk.VBox vbox1;
-	
+
 	private global::Gtk.MenuBar mainMenu;
-	
+
 	private global::Gtk.HPaned mainDivider;
-	
+
 	private global::Gtk.VBox editorPanel;
-	
+
 	private global::Gtk.HBox hbox19;
-	
+
 	private global::Gtk.HBox panelToolbar;
-	
+
 	private global::Gtk.ToggleButton btnShowInfo;
-	
+
 	private global::Gtk.VSeparator vseparator1;
-	
+
 	private global::Gtk.Button btnOpen;
-	
+
 	private global::Gtk.Button btnSave;
-	
+
 	private global::Gtk.Button btnPrintPreview;
-	
+
 	private global::Gtk.Button btnPrint;
-	
+
 	private global::Gtk.VSeparator vseparator2;
-	
+
 	private global::Gtk.Button btnUndo;
-	
+
 	private global::Gtk.Button btnRedo;
-	
+
 	private global::Gtk.VSeparator vseparator4;
-	
+
 	private global::Gtk.Button btnCut;
-	
+
 	private global::Gtk.Button btnCopy;
-	
+
 	private global::Gtk.Button btnPaste;
-	
+
 	private global::Gtk.VSeparator vseparator5;
-	
+
 	private global::Gtk.Label label9;
-	
+
 	private global::Gtk.Button btnTransposeDown;
-	
+
 	private global::Gtk.Button btnTransposeUp;
-	
+
 	private global::Gtk.CheckButton chkUseSharps;
-	
+
 	private global::Gtk.ToggleButton btnShowTagBar;
-	
+
 	private global::Gtk.HBox hbox18;
-	
+
 	private global::Gtk.VBox vbox3;
-	
+
 	private global::Gtk.VBox panelSongInfo;
-	
+
 	private global::Gtk.HBox hbox2;
-	
+
 	private global::Gtk.Label label3;
-	
+
 	private global::Gtk.Entry txtTitle;
-	
+
 	private global::Gtk.HBox hbox1;
-	
+
 	private global::Gtk.Label label4;
-	
+
 	private global::Gtk.Entry txtArtist;
-	
+
 	private global::Gtk.HBox hbox3;
-	
+
 	private global::Gtk.Label label5;
-	
+
 	private global::Gtk.Entry txtCopyright;
-	
+
 	private global::Gtk.HBox hbox4;
-	
+
 	private global::Gtk.Label label8;
-	
+
 	private global::Gtk.Entry txtCCLI;
-	
+
 	private global::Gtk.Label label6;
-	
+
 	private global::Gtk.Entry txtKey;
-	
+
 	private global::Gtk.Label label7;
-	
+
 	private global::Gtk.Entry txtCapo;
-	
+
 	private global::Gtk.ScrolledWindow GtkScrolledWindow;
-	
+
 	private global::Gtk.TextView txtEditor;
-	
+
 	private global::Gtk.VBox panelTagBar;
-	
+
 	private global::Gtk.Label panelTagHeader;
-	
+
 	private global::Gtk.HBox hbox6;
-	
+
 	private global::Gtk.ToggleButton btnTagBarOption;
-	
+
 	private global::Gtk.ToggleButton btnChordBarOption;
-	
+
 	private global::Gtk.HSeparator hseparator1;
-	
+
 	private global::Gtk.Notebook previewPane;
-	
+
 	private global::Gtk.ScrolledWindow GtkScrolledWindow1;
-	
+
 	private global::Gtk.DrawingArea drawingArea;
-	
+
 	private global::Gtk.Label label1;
-	
+
 	private global::Gtk.ScrolledWindow GtkScrolledWindow2;
-	
+
 	private global::Gtk.TextView txtTextView;
-	
+
 	private global::Gtk.Label label11;
 
-	protected virtual void Build ()
+	protected virtual void Build()
 	{
-		global::Stetic.Gui.Initialize (this);
+		global::Stetic.Gui.Initialize(this);
 		// Widget MainWindow
-		this.UIManager = new global::Gtk.UIManager ();
-		global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup ("Default");
-		this.FileAction = new global::Gtk.Action ("FileAction", global::Mono.Unix.Catalog.GetString ("File"), null, null);
-		this.FileAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("File");
-		w1.Add (this.FileAction, null);
-		this.HelpAction = new global::Gtk.Action ("HelpAction", global::Mono.Unix.Catalog.GetString ("Help"), null, null);
-		this.HelpAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Help");
-		w1.Add (this.HelpAction, null);
-		this.newAction = new global::Gtk.Action ("newAction", global::Mono.Unix.Catalog.GetString ("New Song"), null, "gtk-new");
-		this.newAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("New Song");
-		w1.Add (this.newAction, null);
-		this.openAction = new global::Gtk.Action ("openAction", global::Mono.Unix.Catalog.GetString ("_Open Song"), null, "gtk-open");
-		this.openAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("_Open Song");
-		w1.Add (this.openAction, null);
-		this.saveAction = new global::Gtk.Action ("saveAction", global::Mono.Unix.Catalog.GetString ("_Save"), null, "gtk-save");
-		this.saveAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("_Save");
-		w1.Add (this.saveAction, null);
-		this.saveAsAction = new global::Gtk.Action ("saveAsAction", global::Mono.Unix.Catalog.GetString ("Save _As"), null, "gtk-save-as");
-		this.saveAsAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Save _As");
-		w1.Add (this.saveAsAction, null);
-		this.printPreviewAction = new global::Gtk.Action ("printPreviewAction", global::Mono.Unix.Catalog.GetString ("Print Preview"), null, "gtk-print-preview");
-		this.printPreviewAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Print Preview");
-		w1.Add (this.printPreviewAction, null);
-		this.printAction = new global::Gtk.Action ("printAction", global::Mono.Unix.Catalog.GetString ("Print"), null, "gtk-print");
-		this.printAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Print");
-		w1.Add (this.printAction, null);
-		this.propertiesAction = new global::Gtk.Action ("propertiesAction", global::Mono.Unix.Catalog.GetString ("Settings"), null, "gtk-properties");
-		this.propertiesAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Settings");
-		w1.Add (this.propertiesAction, null);
-		this.ExitAction = new global::Gtk.Action ("ExitAction", global::Mono.Unix.Catalog.GetString ("Exit"), null, null);
-		this.ExitAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Exit");
-		w1.Add (this.ExitAction, null);
-		this.openAction1 = new global::Gtk.Action ("openAction1", null, null, "gtk-open");
-		w1.Add (this.openAction1, null);
-		this.saveAction1 = new global::Gtk.Action ("saveAction1", null, null, "gtk-save");
-		w1.Add (this.saveAction1, null);
-		this.EditAction = new global::Gtk.Action ("EditAction", global::Mono.Unix.Catalog.GetString ("Edit"), null, null);
-		this.EditAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Edit");
-		w1.Add (this.EditAction, null);
-		this.ViewAction = new global::Gtk.Action ("ViewAction", global::Mono.Unix.Catalog.GetString ("View"), null, null);
-		this.ViewAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("View");
-		w1.Add (this.ViewAction, null);
-		this.SongInformationAction = new global::Gtk.ToggleAction ("SongInformationAction", global::Mono.Unix.Catalog.GetString ("Song Information"), null, null);
-		this.SongInformationAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Song Information");
-		w1.Add (this.SongInformationAction, null);
-		this.TagChordBarAction = new global::Gtk.ToggleAction ("TagChordBarAction", global::Mono.Unix.Catalog.GetString ("Tag/Chord Bar"), null, null);
-		this.TagChordBarAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Tag/Chord Bar");
-		w1.Add (this.TagChordBarAction, "<Primary><Mod2>t");
-		this.undoAction = new global::Gtk.Action ("undoAction", global::Mono.Unix.Catalog.GetString ("Undo"), null, "gtk-undo");
-		this.undoAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Undo");
-		w1.Add (this.undoAction, "<Primary><Mod2>z");
-		this.redoAction = new global::Gtk.Action ("redoAction", global::Mono.Unix.Catalog.GetString ("Redo"), null, "gtk-redo");
-		this.redoAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Redo");
-		w1.Add (this.redoAction, "<Primary><Mod2>y");
-		this.copyAction = new global::Gtk.Action ("copyAction", global::Mono.Unix.Catalog.GetString ("Copy"), null, "gtk-copy");
-		this.copyAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Copy");
-		w1.Add (this.copyAction, "<Primary><Mod2>c");
-		this.cutAction = new global::Gtk.Action ("cutAction", global::Mono.Unix.Catalog.GetString ("Cut"), null, "gtk-cut");
-		this.cutAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Cut");
-		w1.Add (this.cutAction, null);
-		this.pasteAction = new global::Gtk.Action ("pasteAction", global::Mono.Unix.Catalog.GetString ("Paste"), null, "gtk-paste");
-		this.pasteAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Paste");
-		w1.Add (this.pasteAction, null);
-		this.UIManager.InsertActionGroup (w1, 0);
-		this.AddAccelGroup (this.UIManager.AccelGroup);
+		this.UIManager = new global::Gtk.UIManager();
+		global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup("Default");
+		this.FileAction = new global::Gtk.Action("FileAction", global::Mono.Unix.Catalog.GetString("File"), null, null);
+		this.FileAction.ShortLabel = global::Mono.Unix.Catalog.GetString("File");
+		w1.Add(this.FileAction, null);
+		this.HelpAction = new global::Gtk.Action("HelpAction", global::Mono.Unix.Catalog.GetString("Help"), null, null);
+		this.HelpAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Help");
+		w1.Add(this.HelpAction, null);
+		this.newAction = new global::Gtk.Action("newAction", global::Mono.Unix.Catalog.GetString("New Song"), null, "gtk-new");
+		this.newAction.ShortLabel = global::Mono.Unix.Catalog.GetString("New Song");
+		w1.Add(this.newAction, null);
+		this.openAction = new global::Gtk.Action("openAction", global::Mono.Unix.Catalog.GetString("_Open Song"), null, "gtk-open");
+		this.openAction.ShortLabel = global::Mono.Unix.Catalog.GetString("_Open Song");
+		w1.Add(this.openAction, null);
+		this.saveAction = new global::Gtk.Action("saveAction", global::Mono.Unix.Catalog.GetString("_Save"), null, "gtk-save");
+		this.saveAction.ShortLabel = global::Mono.Unix.Catalog.GetString("_Save");
+		w1.Add(this.saveAction, null);
+		this.saveAsAction = new global::Gtk.Action("saveAsAction", global::Mono.Unix.Catalog.GetString("Save _As"), null, "gtk-save-as");
+		this.saveAsAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Save _As");
+		w1.Add(this.saveAsAction, null);
+		this.printPreviewAction = new global::Gtk.Action("printPreviewAction", global::Mono.Unix.Catalog.GetString("Print Preview"), null, "gtk-print-preview");
+		this.printPreviewAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Print Preview");
+		w1.Add(this.printPreviewAction, null);
+		this.printAction = new global::Gtk.Action("printAction", global::Mono.Unix.Catalog.GetString("Print"), null, "gtk-print");
+		this.printAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Print");
+		w1.Add(this.printAction, null);
+		this.propertiesAction = new global::Gtk.Action("propertiesAction", global::Mono.Unix.Catalog.GetString("Settings"), null, "gtk-properties");
+		this.propertiesAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Settings");
+		w1.Add(this.propertiesAction, null);
+		this.ExitAction = new global::Gtk.Action("ExitAction", global::Mono.Unix.Catalog.GetString("Exit"), null, null);
+		this.ExitAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Exit");
+		w1.Add(this.ExitAction, null);
+		this.openAction1 = new global::Gtk.Action("openAction1", null, null, "gtk-open");
+		w1.Add(this.openAction1, null);
+		this.saveAction1 = new global::Gtk.Action("saveAction1", null, null, "gtk-save");
+		w1.Add(this.saveAction1, null);
+		this.EditAction = new global::Gtk.Action("EditAction", global::Mono.Unix.Catalog.GetString("Edit"), null, null);
+		this.EditAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Edit");
+		w1.Add(this.EditAction, null);
+		this.ViewAction = new global::Gtk.Action("ViewAction", global::Mono.Unix.Catalog.GetString("View"), null, null);
+		this.ViewAction.ShortLabel = global::Mono.Unix.Catalog.GetString("View");
+		w1.Add(this.ViewAction, null);
+		this.SongInformationAction = new global::Gtk.ToggleAction("SongInformationAction", global::Mono.Unix.Catalog.GetString("Song Information"), null, null);
+		this.SongInformationAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Song Information");
+		w1.Add(this.SongInformationAction, null);
+		this.TagChordBarAction = new global::Gtk.ToggleAction("TagChordBarAction", global::Mono.Unix.Catalog.GetString("Tag/Chord Bar"), null, null);
+		this.TagChordBarAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Tag/Chord Bar");
+		w1.Add(this.TagChordBarAction, "<Primary><Mod2>t");
+		this.undoAction = new global::Gtk.Action("undoAction", global::Mono.Unix.Catalog.GetString("Undo"), null, "gtk-undo");
+		this.undoAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Undo");
+		w1.Add(this.undoAction, "<Primary><Mod2>z");
+		this.redoAction = new global::Gtk.Action("redoAction", global::Mono.Unix.Catalog.GetString("Redo"), null, "gtk-redo");
+		this.redoAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Redo");
+		w1.Add(this.redoAction, "<Primary><Mod2>y");
+		this.copyAction = new global::Gtk.Action("copyAction", global::Mono.Unix.Catalog.GetString("Copy"), null, "gtk-copy");
+		this.copyAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Copy");
+		w1.Add(this.copyAction, "<Primary><Mod2>c");
+		this.cutAction = new global::Gtk.Action("cutAction", global::Mono.Unix.Catalog.GetString("Cut"), null, "gtk-cut");
+		this.cutAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Cut");
+		w1.Add(this.cutAction, null);
+		this.pasteAction = new global::Gtk.Action("pasteAction", global::Mono.Unix.Catalog.GetString("Paste"), null, "gtk-paste");
+		this.pasteAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Paste");
+		w1.Add(this.pasteAction, null);
+		this.UIManager.InsertActionGroup(w1, 0);
+		this.AddAccelGroup(this.UIManager.AccelGroup);
 		this.Name = "MainWindow";
-		this.Title = global::Mono.Unix.Catalog.GetString ("Chord Sheet Generator");
-		this.Icon = global::Gdk.Pixbuf.LoadFromResource ("CSGen.chordsheetgen.png");
+		this.Title = global::Mono.Unix.Catalog.GetString("Chord Sheet Generator");
+		this.Icon = global::Gdk.Pixbuf.LoadFromResource("CSGen.chordsheetgen.png");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
-		this.mainPanel = new global::Gtk.VBox ();
+		this.mainPanel = new global::Gtk.VBox();
 		this.mainPanel.Name = "mainPanel";
 		// Container child mainPanel.Gtk.Box+BoxChild
-		this.hbox17 = new global::Gtk.HBox ();
+		this.hbox17 = new global::Gtk.HBox();
 		this.hbox17.Name = "hbox17";
 		this.hbox17.Spacing = 5;
 		// Container child hbox17.Gtk.Box+BoxChild
-		this.vbox1 = new global::Gtk.VBox ();
+		this.vbox1 = new global::Gtk.VBox();
 		this.vbox1.Name = "vbox1";
 		this.vbox1.Spacing = 6;
 		// Container child vbox1.Gtk.Box+BoxChild
-		this.UIManager.AddUiFromString ("<ui><menubar name='mainMenu'><menu name='FileAction' action='FileAction'><menuitem name='newAction' action='newAction'/><menuitem name='openAction' action='openAction'/><menuitem name='saveAction' action='saveAction'/><menuitem name='saveAsAction' action='saveAsAction'/><separator/><menuitem name='printPreviewAction' action='printPreviewAction'/><menuitem name='printAction' action='printAction'/><separator/><menuitem name='propertiesAction' action='propertiesAction'/><separator/><menuitem name='ExitAction' action='ExitAction'/></menu><menu name='EditAction' action='EditAction'><menuitem name='undoAction' action='undoAction'/><menuitem name='redoAction' action='redoAction'/><separator/><menuitem name='cutAction' action='cutAction'/><menuitem name='copyAction' action='copyAction'/><menuitem name='pasteAction' action='pasteAction'/></menu><menu name='ViewAction' action='ViewAction'><menuitem name='SongInformationAction' action='SongInformationAction'/><menuitem name='TagChordBarAction' action='TagChordBarAction'/></menu><menu name='HelpAction' action='HelpAction'/></menubar></ui>");
-		this.mainMenu = ((global::Gtk.MenuBar)(this.UIManager.GetWidget ("/mainMenu")));
+		this.UIManager.AddUiFromString("<ui><menubar name='mainMenu'><menu name='FileAction' action='FileAction'><menuitem name='newAction' action='newAction'/><menuitem name='openAction' action='openAction'/><menuitem name='saveAction' action='saveAction'/><menuitem name='saveAsAction' action='saveAsAction'/><separator/><menuitem name='printPreviewAction' action='printPreviewAction'/><menuitem name='printAction' action='printAction'/><separator/><menuitem name='propertiesAction' action='propertiesAction'/><separator/><menuitem name='ExitAction' action='ExitAction'/></menu><menu name='EditAction' action='EditAction'><menuitem name='undoAction' action='undoAction'/><menuitem name='redoAction' action='redoAction'/><separator/><menuitem name='cutAction' action='cutAction'/><menuitem name='copyAction' action='copyAction'/><menuitem name='pasteAction' action='pasteAction'/></menu><menu name='ViewAction' action='ViewAction'><menuitem name='SongInformationAction' action='SongInformationAction'/><menuitem name='TagChordBarAction' action='TagChordBarAction'/></menu><menu name='HelpAction' action='HelpAction'/></menubar></ui>");
+		this.mainMenu = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/mainMenu")));
 		this.mainMenu.Name = "mainMenu";
-		this.vbox1.Add (this.mainMenu);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.mainMenu]));
+		this.vbox1.Add(this.mainMenu);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.mainMenu]));
 		w2.Position = 0;
 		w2.Expand = false;
 		w2.Fill = false;
 		// Container child vbox1.Gtk.Box+BoxChild
-		this.mainDivider = new global::Gtk.HPaned ();
+		this.mainDivider = new global::Gtk.HPaned();
 		this.mainDivider.CanFocus = true;
 		this.mainDivider.Name = "mainDivider";
 		this.mainDivider.Position = 607;
 		this.mainDivider.BorderWidth = ((uint)(5));
 		// Container child mainDivider.Gtk.Paned+PanedChild
-		this.editorPanel = new global::Gtk.VBox ();
+		this.editorPanel = new global::Gtk.VBox();
 		this.editorPanel.Name = "editorPanel";
 		this.editorPanel.Spacing = 3;
 		// Container child editorPanel.Gtk.Box+BoxChild
-		this.hbox19 = new global::Gtk.HBox ();
+		this.hbox19 = new global::Gtk.HBox();
 		this.hbox19.Name = "hbox19";
 		this.hbox19.Spacing = 6;
 		// Container child hbox19.Gtk.Box+BoxChild
-		this.panelToolbar = new global::Gtk.HBox ();
+		this.panelToolbar = new global::Gtk.HBox();
 		this.panelToolbar.HeightRequest = 30;
 		this.panelToolbar.Name = "panelToolbar";
 		this.panelToolbar.Spacing = 2;
 		this.panelToolbar.BorderWidth = ((uint)(1));
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnShowInfo = new global::Gtk.ToggleButton ();
+		this.btnShowInfo = new global::Gtk.ToggleButton();
 		this.btnShowInfo.TooltipMarkup = "Show Song Information";
 		this.btnShowInfo.CanFocus = true;
 		this.btnShowInfo.Name = "btnShowInfo";
 		this.btnShowInfo.UseUnderline = true;
 		this.btnShowInfo.Active = true;
-		global::Gtk.Image w3 = new global::Gtk.Image ();
-		w3.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-dialog-info", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w3 = new global::Gtk.Image();
+		w3.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-dialog-info", global::Gtk.IconSize.Menu);
 		this.btnShowInfo.Image = w3;
-		this.panelToolbar.Add (this.btnShowInfo);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnShowInfo]));
+		this.panelToolbar.Add(this.btnShowInfo);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnShowInfo]));
 		w4.Position = 0;
 		w4.Expand = false;
 		w4.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.vseparator1 = new global::Gtk.VSeparator ();
+		this.vseparator1 = new global::Gtk.VSeparator();
 		this.vseparator1.Name = "vseparator1";
-		this.panelToolbar.Add (this.vseparator1);
-		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.vseparator1]));
+		this.panelToolbar.Add(this.vseparator1);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.vseparator1]));
 		w5.Position = 1;
 		w5.Expand = false;
 		w5.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnOpen = new global::Gtk.Button ();
+		this.btnOpen = new global::Gtk.Button();
 		this.btnOpen.TooltipMarkup = "Open new song file.";
 		this.btnOpen.CanFocus = true;
 		this.btnOpen.Name = "btnOpen";
 		this.btnOpen.UseUnderline = true;
-		global::Gtk.Image w6 = new global::Gtk.Image ();
-		w6.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-open", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w6 = new global::Gtk.Image();
+		w6.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-open", global::Gtk.IconSize.Menu);
 		this.btnOpen.Image = w6;
-		this.panelToolbar.Add (this.btnOpen);
-		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnOpen]));
+		this.panelToolbar.Add(this.btnOpen);
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnOpen]));
 		w7.Position = 2;
 		w7.Expand = false;
 		w7.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnSave = new global::Gtk.Button ();
+		this.btnSave = new global::Gtk.Button();
 		this.btnSave.TooltipMarkup = "Save song file";
 		this.btnSave.CanFocus = true;
 		this.btnSave.Name = "btnSave";
 		this.btnSave.UseUnderline = true;
-		global::Gtk.Image w8 = new global::Gtk.Image ();
-		w8.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-save", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w8 = new global::Gtk.Image();
+		w8.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-save", global::Gtk.IconSize.Menu);
 		this.btnSave.Image = w8;
-		this.panelToolbar.Add (this.btnSave);
-		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnSave]));
+		this.panelToolbar.Add(this.btnSave);
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnSave]));
 		w9.Position = 3;
 		w9.Expand = false;
 		w9.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnPrintPreview = new global::Gtk.Button ();
+		this.btnPrintPreview = new global::Gtk.Button();
 		this.btnPrintPreview.TooltipMarkup = "Print Preview";
 		this.btnPrintPreview.CanFocus = true;
 		this.btnPrintPreview.Name = "btnPrintPreview";
 		this.btnPrintPreview.UseUnderline = true;
-		global::Gtk.Image w10 = new global::Gtk.Image ();
-		w10.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-print-preview", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w10 = new global::Gtk.Image();
+		w10.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-print-preview", global::Gtk.IconSize.Menu);
 		this.btnPrintPreview.Image = w10;
-		this.panelToolbar.Add (this.btnPrintPreview);
-		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnPrintPreview]));
+		this.panelToolbar.Add(this.btnPrintPreview);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnPrintPreview]));
 		w11.Position = 4;
 		w11.Expand = false;
 		w11.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnPrint = new global::Gtk.Button ();
+		this.btnPrint = new global::Gtk.Button();
 		this.btnPrint.TooltipMarkup = "Print";
 		this.btnPrint.CanFocus = true;
 		this.btnPrint.Name = "btnPrint";
 		this.btnPrint.UseUnderline = true;
-		global::Gtk.Image w12 = new global::Gtk.Image ();
-		w12.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-print", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w12 = new global::Gtk.Image();
+		w12.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-print", global::Gtk.IconSize.Menu);
 		this.btnPrint.Image = w12;
-		this.panelToolbar.Add (this.btnPrint);
-		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnPrint]));
+		this.panelToolbar.Add(this.btnPrint);
+		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnPrint]));
 		w13.Position = 5;
 		w13.Expand = false;
 		w13.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.vseparator2 = new global::Gtk.VSeparator ();
+		this.vseparator2 = new global::Gtk.VSeparator();
 		this.vseparator2.Name = "vseparator2";
-		this.panelToolbar.Add (this.vseparator2);
-		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.vseparator2]));
+		this.panelToolbar.Add(this.vseparator2);
+		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.vseparator2]));
 		w14.Position = 6;
 		w14.Expand = false;
 		w14.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnUndo = new global::Gtk.Button ();
+		this.btnUndo = new global::Gtk.Button();
 		this.btnUndo.TooltipMarkup = "Undo action";
 		this.btnUndo.CanFocus = true;
 		this.btnUndo.Name = "btnUndo";
 		this.btnUndo.UseUnderline = true;
-		global::Gtk.Image w15 = new global::Gtk.Image ();
-		w15.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-undo", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w15 = new global::Gtk.Image();
+		w15.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-undo", global::Gtk.IconSize.Menu);
 		this.btnUndo.Image = w15;
-		this.panelToolbar.Add (this.btnUndo);
-		global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnUndo]));
+		this.panelToolbar.Add(this.btnUndo);
+		global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnUndo]));
 		w16.Position = 7;
 		w16.Expand = false;
 		w16.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnRedo = new global::Gtk.Button ();
+		this.btnRedo = new global::Gtk.Button();
 		this.btnRedo.TooltipMarkup = "Redo action";
 		this.btnRedo.CanFocus = true;
 		this.btnRedo.Name = "btnRedo";
 		this.btnRedo.UseUnderline = true;
-		global::Gtk.Image w17 = new global::Gtk.Image ();
-		w17.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-redo", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w17 = new global::Gtk.Image();
+		w17.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-redo", global::Gtk.IconSize.Menu);
 		this.btnRedo.Image = w17;
-		this.panelToolbar.Add (this.btnRedo);
-		global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnRedo]));
+		this.panelToolbar.Add(this.btnRedo);
+		global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnRedo]));
 		w18.Position = 8;
 		w18.Expand = false;
 		w18.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.vseparator4 = new global::Gtk.VSeparator ();
+		this.vseparator4 = new global::Gtk.VSeparator();
 		this.vseparator4.Name = "vseparator4";
-		this.panelToolbar.Add (this.vseparator4);
-		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.vseparator4]));
+		this.panelToolbar.Add(this.vseparator4);
+		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.vseparator4]));
 		w19.Position = 9;
 		w19.Expand = false;
 		w19.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnCut = new global::Gtk.Button ();
+		this.btnCut = new global::Gtk.Button();
 		this.btnCut.TooltipMarkup = "Cut selection";
 		this.btnCut.CanFocus = true;
 		this.btnCut.Name = "btnCut";
 		this.btnCut.UseUnderline = true;
-		global::Gtk.Image w20 = new global::Gtk.Image ();
-		w20.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-cut", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w20 = new global::Gtk.Image();
+		w20.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-cut", global::Gtk.IconSize.Menu);
 		this.btnCut.Image = w20;
-		this.panelToolbar.Add (this.btnCut);
-		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnCut]));
+		this.panelToolbar.Add(this.btnCut);
+		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnCut]));
 		w21.Position = 10;
 		w21.Expand = false;
 		w21.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnCopy = new global::Gtk.Button ();
+		this.btnCopy = new global::Gtk.Button();
 		this.btnCopy.TooltipMarkup = "Copy selection";
 		this.btnCopy.CanFocus = true;
 		this.btnCopy.Name = "btnCopy";
 		this.btnCopy.UseUnderline = true;
-		global::Gtk.Image w22 = new global::Gtk.Image ();
-		w22.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-copy", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w22 = new global::Gtk.Image();
+		w22.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-copy", global::Gtk.IconSize.Menu);
 		this.btnCopy.Image = w22;
-		this.panelToolbar.Add (this.btnCopy);
-		global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnCopy]));
+		this.panelToolbar.Add(this.btnCopy);
+		global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnCopy]));
 		w23.Position = 11;
 		w23.Expand = false;
 		w23.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnPaste = new global::Gtk.Button ();
+		this.btnPaste = new global::Gtk.Button();
 		this.btnPaste.TooltipMarkup = "Paste";
 		this.btnPaste.CanFocus = true;
 		this.btnPaste.Name = "btnPaste";
 		this.btnPaste.UseUnderline = true;
-		global::Gtk.Image w24 = new global::Gtk.Image ();
-		w24.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-paste", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w24 = new global::Gtk.Image();
+		w24.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-paste", global::Gtk.IconSize.Menu);
 		this.btnPaste.Image = w24;
-		this.panelToolbar.Add (this.btnPaste);
-		global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnPaste]));
+		this.panelToolbar.Add(this.btnPaste);
+		global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnPaste]));
 		w25.Position = 12;
 		w25.Expand = false;
 		w25.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.vseparator5 = new global::Gtk.VSeparator ();
+		this.vseparator5 = new global::Gtk.VSeparator();
 		this.vseparator5.Name = "vseparator5";
-		this.panelToolbar.Add (this.vseparator5);
-		global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.vseparator5]));
+		this.panelToolbar.Add(this.vseparator5);
+		global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.vseparator5]));
 		w26.Position = 13;
 		w26.Expand = false;
 		w26.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.label9 = new global::Gtk.Label ();
+		this.label9 = new global::Gtk.Label();
 		this.label9.Name = "label9";
-		this.label9.LabelProp = global::Mono.Unix.Catalog.GetString ("Transpose");
-		this.panelToolbar.Add (this.label9);
-		global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.label9]));
+		this.label9.LabelProp = global::Mono.Unix.Catalog.GetString("Transpose");
+		this.panelToolbar.Add(this.label9);
+		global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.label9]));
 		w27.Position = 14;
 		w27.Expand = false;
 		w27.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnTransposeDown = new global::Gtk.Button ();
+		this.btnTransposeDown = new global::Gtk.Button();
 		this.btnTransposeDown.TooltipMarkup = "Transpose song or selection down a half step.";
 		this.btnTransposeDown.CanFocus = true;
 		this.btnTransposeDown.Name = "btnTransposeDown";
 		this.btnTransposeDown.UseUnderline = true;
-		global::Gtk.Image w28 = new global::Gtk.Image ();
-		w28.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-down", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w28 = new global::Gtk.Image();
+		w28.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-go-down", global::Gtk.IconSize.Menu);
 		this.btnTransposeDown.Image = w28;
-		this.panelToolbar.Add (this.btnTransposeDown);
-		global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnTransposeDown]));
+		this.panelToolbar.Add(this.btnTransposeDown);
+		global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnTransposeDown]));
 		w29.Position = 15;
 		w29.Expand = false;
 		w29.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.btnTransposeUp = new global::Gtk.Button ();
+		this.btnTransposeUp = new global::Gtk.Button();
 		this.btnTransposeUp.TooltipMarkup = "Transpose song or selection up a half step.";
 		this.btnTransposeUp.CanFocus = true;
 		this.btnTransposeUp.Name = "btnTransposeUp";
 		this.btnTransposeUp.UseUnderline = true;
-		global::Gtk.Image w30 = new global::Gtk.Image ();
-		w30.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-up", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w30 = new global::Gtk.Image();
+		w30.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-go-up", global::Gtk.IconSize.Menu);
 		this.btnTransposeUp.Image = w30;
-		this.panelToolbar.Add (this.btnTransposeUp);
-		global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.btnTransposeUp]));
+		this.panelToolbar.Add(this.btnTransposeUp);
+		global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.btnTransposeUp]));
 		w31.Position = 16;
 		w31.Expand = false;
 		w31.Fill = false;
 		// Container child panelToolbar.Gtk.Box+BoxChild
-		this.chkUseSharps = new global::Gtk.CheckButton ();
+		this.chkUseSharps = new global::Gtk.CheckButton();
 		this.chkUseSharps.CanFocus = true;
 		this.chkUseSharps.Name = "chkUseSharps";
-		this.chkUseSharps.Label = global::Mono.Unix.Catalog.GetString ("Use sharps");
+		this.chkUseSharps.Label = global::Mono.Unix.Catalog.GetString("Use sharps");
 		this.chkUseSharps.DrawIndicator = true;
 		this.chkUseSharps.UseUnderline = true;
-		this.panelToolbar.Add (this.chkUseSharps);
-		global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.panelToolbar [this.chkUseSharps]));
+		this.panelToolbar.Add(this.chkUseSharps);
+		global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.panelToolbar[this.chkUseSharps]));
 		w32.Position = 17;
-		this.hbox19.Add (this.panelToolbar);
-		global::Gtk.Box.BoxChild w33 = ((global::Gtk.Box.BoxChild)(this.hbox19 [this.panelToolbar]));
+		this.hbox19.Add(this.panelToolbar);
+		global::Gtk.Box.BoxChild w33 = ((global::Gtk.Box.BoxChild)(this.hbox19[this.panelToolbar]));
 		w33.Position = 0;
 		// Container child hbox19.Gtk.Box+BoxChild
-		this.btnShowTagBar = new global::Gtk.ToggleButton ();
+		this.btnShowTagBar = new global::Gtk.ToggleButton();
 		this.btnShowTagBar.CanFocus = true;
 		this.btnShowTagBar.Name = "btnShowTagBar";
 		this.btnShowTagBar.UseUnderline = true;
-		global::Gtk.Image w34 = new global::Gtk.Image ();
-		w34.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-about", global::Gtk.IconSize.Menu);
+		global::Gtk.Image w34 = new global::Gtk.Image();
+		w34.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-about", global::Gtk.IconSize.Menu);
 		this.btnShowTagBar.Image = w34;
-		this.hbox19.Add (this.btnShowTagBar);
-		global::Gtk.Box.BoxChild w35 = ((global::Gtk.Box.BoxChild)(this.hbox19 [this.btnShowTagBar]));
+		this.hbox19.Add(this.btnShowTagBar);
+		global::Gtk.Box.BoxChild w35 = ((global::Gtk.Box.BoxChild)(this.hbox19[this.btnShowTagBar]));
 		w35.Position = 1;
 		w35.Expand = false;
 		w35.Fill = false;
-		this.editorPanel.Add (this.hbox19);
-		global::Gtk.Box.BoxChild w36 = ((global::Gtk.Box.BoxChild)(this.editorPanel [this.hbox19]));
+		this.editorPanel.Add(this.hbox19);
+		global::Gtk.Box.BoxChild w36 = ((global::Gtk.Box.BoxChild)(this.editorPanel[this.hbox19]));
 		w36.Position = 0;
 		w36.Expand = false;
 		w36.Fill = false;
 		// Container child editorPanel.Gtk.Box+BoxChild
-		this.hbox18 = new global::Gtk.HBox ();
+		this.hbox18 = new global::Gtk.HBox();
 		this.hbox18.Name = "hbox18";
 		this.hbox18.Spacing = 6;
 		// Container child hbox18.Gtk.Box+BoxChild
-		this.vbox3 = new global::Gtk.VBox ();
+		this.vbox3 = new global::Gtk.VBox();
 		this.vbox3.Name = "vbox3";
 		this.vbox3.Spacing = 6;
 		// Container child vbox3.Gtk.Box+BoxChild
-		this.panelSongInfo = new global::Gtk.VBox ();
+		this.panelSongInfo = new global::Gtk.VBox();
 		this.panelSongInfo.Name = "panelSongInfo";
 		this.panelSongInfo.Spacing = 2;
 		// Container child panelSongInfo.Gtk.Box+BoxChild
-		this.hbox2 = new global::Gtk.HBox ();
+		this.hbox2 = new global::Gtk.HBox();
 		this.hbox2.Name = "hbox2";
 		this.hbox2.Spacing = 6;
 		// Container child hbox2.Gtk.Box+BoxChild
-		this.label3 = new global::Gtk.Label ();
+		this.label3 = new global::Gtk.Label();
 		this.label3.WidthRequest = 70;
 		this.label3.Name = "label3";
 		this.label3.Xpad = 2;
 		this.label3.Xalign = 0F;
-		this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Title:");
-		this.hbox2.Add (this.label3);
-		global::Gtk.Box.BoxChild w37 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.label3]));
+		this.label3.LabelProp = global::Mono.Unix.Catalog.GetString("Title:");
+		this.hbox2.Add(this.label3);
+		global::Gtk.Box.BoxChild w37 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.label3]));
 		w37.Position = 0;
 		w37.Expand = false;
 		w37.Fill = false;
 		// Container child hbox2.Gtk.Box+BoxChild
-		this.txtTitle = new global::Gtk.Entry ();
+		this.txtTitle = new global::Gtk.Entry();
 		this.txtTitle.CanFocus = true;
 		this.txtTitle.Name = "txtTitle";
 		this.txtTitle.IsEditable = true;
 		this.txtTitle.InvisibleChar = '•';
-		this.hbox2.Add (this.txtTitle);
-		global::Gtk.Box.BoxChild w38 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.txtTitle]));
+		this.hbox2.Add(this.txtTitle);
+		global::Gtk.Box.BoxChild w38 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.txtTitle]));
 		w38.Position = 1;
-		this.panelSongInfo.Add (this.hbox2);
-		global::Gtk.Box.BoxChild w39 = ((global::Gtk.Box.BoxChild)(this.panelSongInfo [this.hbox2]));
+		this.panelSongInfo.Add(this.hbox2);
+		global::Gtk.Box.BoxChild w39 = ((global::Gtk.Box.BoxChild)(this.panelSongInfo[this.hbox2]));
 		w39.Position = 0;
 		w39.Expand = false;
 		w39.Fill = false;
 		// Container child panelSongInfo.Gtk.Box+BoxChild
-		this.hbox1 = new global::Gtk.HBox ();
+		this.hbox1 = new global::Gtk.HBox();
 		this.hbox1.Name = "hbox1";
 		this.hbox1.Spacing = 6;
 		// Container child hbox1.Gtk.Box+BoxChild
-		this.label4 = new global::Gtk.Label ();
+		this.label4 = new global::Gtk.Label();
 		this.label4.WidthRequest = 70;
 		this.label4.Name = "label4";
 		this.label4.Xpad = 2;
 		this.label4.Xalign = 0F;
-		this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Artist:");
-		this.hbox1.Add (this.label4);
-		global::Gtk.Box.BoxChild w40 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.label4]));
+		this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("Artist:");
+		this.hbox1.Add(this.label4);
+		global::Gtk.Box.BoxChild w40 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.label4]));
 		w40.Position = 0;
 		w40.Expand = false;
 		w40.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
-		this.txtArtist = new global::Gtk.Entry ();
+		this.txtArtist = new global::Gtk.Entry();
 		this.txtArtist.CanFocus = true;
 		this.txtArtist.Name = "txtArtist";
 		this.txtArtist.IsEditable = true;
 		this.txtArtist.InvisibleChar = '•';
-		this.hbox1.Add (this.txtArtist);
-		global::Gtk.Box.BoxChild w41 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.txtArtist]));
+		this.hbox1.Add(this.txtArtist);
+		global::Gtk.Box.BoxChild w41 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.txtArtist]));
 		w41.Position = 1;
-		this.panelSongInfo.Add (this.hbox1);
-		global::Gtk.Box.BoxChild w42 = ((global::Gtk.Box.BoxChild)(this.panelSongInfo [this.hbox1]));
+		this.panelSongInfo.Add(this.hbox1);
+		global::Gtk.Box.BoxChild w42 = ((global::Gtk.Box.BoxChild)(this.panelSongInfo[this.hbox1]));
 		w42.Position = 1;
 		w42.Expand = false;
 		w42.Fill = false;
 		// Container child panelSongInfo.Gtk.Box+BoxChild
-		this.hbox3 = new global::Gtk.HBox ();
+		this.hbox3 = new global::Gtk.HBox();
 		this.hbox3.Name = "hbox3";
 		this.hbox3.Spacing = 6;
 		// Container child hbox3.Gtk.Box+BoxChild
-		this.label5 = new global::Gtk.Label ();
+		this.label5 = new global::Gtk.Label();
 		this.label5.WidthRequest = 70;
 		this.label5.Name = "label5";
 		this.label5.Xpad = 2;
 		this.label5.Xalign = 0F;
-		this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Copyright:");
-		this.hbox3.Add (this.label5);
-		global::Gtk.Box.BoxChild w43 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.label5]));
+		this.label5.LabelProp = global::Mono.Unix.Catalog.GetString("Copyright:");
+		this.hbox3.Add(this.label5);
+		global::Gtk.Box.BoxChild w43 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.label5]));
 		w43.Position = 0;
 		w43.Expand = false;
 		w43.Fill = false;
 		// Container child hbox3.Gtk.Box+BoxChild
-		this.txtCopyright = new global::Gtk.Entry ();
+		this.txtCopyright = new global::Gtk.Entry();
 		this.txtCopyright.CanFocus = true;
 		this.txtCopyright.Name = "txtCopyright";
 		this.txtCopyright.IsEditable = true;
 		this.txtCopyright.InvisibleChar = '•';
-		this.hbox3.Add (this.txtCopyright);
-		global::Gtk.Box.BoxChild w44 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.txtCopyright]));
+		this.hbox3.Add(this.txtCopyright);
+		global::Gtk.Box.BoxChild w44 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.txtCopyright]));
 		w44.Position = 1;
-		this.panelSongInfo.Add (this.hbox3);
-		global::Gtk.Box.BoxChild w45 = ((global::Gtk.Box.BoxChild)(this.panelSongInfo [this.hbox3]));
+		this.panelSongInfo.Add(this.hbox3);
+		global::Gtk.Box.BoxChild w45 = ((global::Gtk.Box.BoxChild)(this.panelSongInfo[this.hbox3]));
 		w45.Position = 2;
 		w45.Expand = false;
 		w45.Fill = false;
 		// Container child panelSongInfo.Gtk.Box+BoxChild
-		this.hbox4 = new global::Gtk.HBox ();
+		this.hbox4 = new global::Gtk.HBox();
 		this.hbox4.Name = "hbox4";
 		this.hbox4.Spacing = 6;
 		// Container child hbox4.Gtk.Box+BoxChild
-		this.label8 = new global::Gtk.Label ();
+		this.label8 = new global::Gtk.Label();
 		this.label8.Name = "label8";
 		this.label8.Xpad = 2;
-		this.label8.LabelProp = global::Mono.Unix.Catalog.GetString ("CCLI:");
-		this.hbox4.Add (this.label8);
-		global::Gtk.Box.BoxChild w46 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.label8]));
+		this.label8.LabelProp = global::Mono.Unix.Catalog.GetString("CCLI:");
+		this.hbox4.Add(this.label8);
+		global::Gtk.Box.BoxChild w46 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.label8]));
 		w46.Position = 0;
 		w46.Expand = false;
 		w46.Fill = false;
 		// Container child hbox4.Gtk.Box+BoxChild
-		this.txtCCLI = new global::Gtk.Entry ();
+		this.txtCCLI = new global::Gtk.Entry();
 		this.txtCCLI.CanFocus = true;
 		this.txtCCLI.Name = "txtCCLI";
 		this.txtCCLI.IsEditable = true;
 		this.txtCCLI.InvisibleChar = '•';
-		this.hbox4.Add (this.txtCCLI);
-		global::Gtk.Box.BoxChild w47 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.txtCCLI]));
+		this.hbox4.Add(this.txtCCLI);
+		global::Gtk.Box.BoxChild w47 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.txtCCLI]));
 		w47.Position = 1;
 		// Container child hbox4.Gtk.Box+BoxChild
-		this.label6 = new global::Gtk.Label ();
+		this.label6 = new global::Gtk.Label();
 		this.label6.Name = "label6";
-		this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("Key:");
-		this.hbox4.Add (this.label6);
-		global::Gtk.Box.BoxChild w48 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.label6]));
+		this.label6.LabelProp = global::Mono.Unix.Catalog.GetString("Key:");
+		this.hbox4.Add(this.label6);
+		global::Gtk.Box.BoxChild w48 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.label6]));
 		w48.Position = 2;
 		w48.Expand = false;
 		w48.Fill = false;
 		// Container child hbox4.Gtk.Box+BoxChild
-		this.txtKey = new global::Gtk.Entry ();
+		this.txtKey = new global::Gtk.Entry();
 		this.txtKey.CanFocus = true;
 		this.txtKey.Name = "txtKey";
 		this.txtKey.IsEditable = true;
 		this.txtKey.InvisibleChar = '•';
-		this.hbox4.Add (this.txtKey);
-		global::Gtk.Box.BoxChild w49 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.txtKey]));
+		this.hbox4.Add(this.txtKey);
+		global::Gtk.Box.BoxChild w49 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.txtKey]));
 		w49.Position = 3;
 		// Container child hbox4.Gtk.Box+BoxChild
-		this.label7 = new global::Gtk.Label ();
+		this.label7 = new global::Gtk.Label();
 		this.label7.Name = "label7";
-		this.label7.LabelProp = global::Mono.Unix.Catalog.GetString ("Capo:");
-		this.hbox4.Add (this.label7);
-		global::Gtk.Box.BoxChild w50 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.label7]));
+		this.label7.LabelProp = global::Mono.Unix.Catalog.GetString("Capo:");
+		this.hbox4.Add(this.label7);
+		global::Gtk.Box.BoxChild w50 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.label7]));
 		w50.Position = 4;
 		w50.Expand = false;
 		w50.Fill = false;
 		// Container child hbox4.Gtk.Box+BoxChild
-		this.txtCapo = new global::Gtk.Entry ();
+		this.txtCapo = new global::Gtk.Entry();
 		this.txtCapo.CanFocus = true;
 		this.txtCapo.Name = "txtCapo";
 		this.txtCapo.IsEditable = true;
 		this.txtCapo.InvisibleChar = '•';
-		this.hbox4.Add (this.txtCapo);
-		global::Gtk.Box.BoxChild w51 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.txtCapo]));
+		this.hbox4.Add(this.txtCapo);
+		global::Gtk.Box.BoxChild w51 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.txtCapo]));
 		w51.Position = 5;
-		this.panelSongInfo.Add (this.hbox4);
-		global::Gtk.Box.BoxChild w52 = ((global::Gtk.Box.BoxChild)(this.panelSongInfo [this.hbox4]));
+		this.panelSongInfo.Add(this.hbox4);
+		global::Gtk.Box.BoxChild w52 = ((global::Gtk.Box.BoxChild)(this.panelSongInfo[this.hbox4]));
 		w52.Position = 3;
 		w52.Expand = false;
 		w52.Fill = false;
-		this.vbox3.Add (this.panelSongInfo);
-		global::Gtk.Box.BoxChild w53 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.panelSongInfo]));
+		this.vbox3.Add(this.panelSongInfo);
+		global::Gtk.Box.BoxChild w53 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.panelSongInfo]));
 		w53.Position = 0;
 		w53.Expand = false;
 		w53.Fill = false;
 		// Container child vbox3.Gtk.Box+BoxChild
-		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
+		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
 		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-		this.txtEditor = new global::Gtk.TextView ();
+		this.txtEditor = new global::Gtk.TextView();
 		this.txtEditor.CanFocus = true;
 		this.txtEditor.Name = "txtEditor";
 		this.txtEditor.LeftMargin = 10;
 		this.txtEditor.RightMargin = 10;
-		this.GtkScrolledWindow.Add (this.txtEditor);
-		this.vbox3.Add (this.GtkScrolledWindow);
-		global::Gtk.Box.BoxChild w55 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.GtkScrolledWindow]));
+		this.GtkScrolledWindow.Add(this.txtEditor);
+		this.vbox3.Add(this.GtkScrolledWindow);
+		global::Gtk.Box.BoxChild w55 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.GtkScrolledWindow]));
 		w55.Position = 1;
-		this.hbox18.Add (this.vbox3);
-		global::Gtk.Box.BoxChild w56 = ((global::Gtk.Box.BoxChild)(this.hbox18 [this.vbox3]));
+		this.hbox18.Add(this.vbox3);
+		global::Gtk.Box.BoxChild w56 = ((global::Gtk.Box.BoxChild)(this.hbox18[this.vbox3]));
 		w56.Position = 0;
 		// Container child hbox18.Gtk.Box+BoxChild
-		this.panelTagBar = new global::Gtk.VBox ();
+		this.panelTagBar = new global::Gtk.VBox();
 		this.panelTagBar.Name = "panelTagBar";
 		// Container child panelTagBar.Gtk.Box+BoxChild
-		this.panelTagHeader = new global::Gtk.Label ();
+		this.panelTagHeader = new global::Gtk.Label();
 		this.panelTagHeader.HeightRequest = 30;
 		this.panelTagHeader.Name = "panelTagHeader";
-		this.panelTagBar.Add (this.panelTagHeader);
-		global::Gtk.Box.BoxChild w57 = ((global::Gtk.Box.BoxChild)(this.panelTagBar [this.panelTagHeader]));
+		this.panelTagBar.Add(this.panelTagHeader);
+		global::Gtk.Box.BoxChild w57 = ((global::Gtk.Box.BoxChild)(this.panelTagBar[this.panelTagHeader]));
 		w57.Position = 0;
 		w57.Expand = false;
 		w57.Fill = false;
 		// Container child panelTagBar.Gtk.Box+BoxChild
-		this.hbox6 = new global::Gtk.HBox ();
+		this.hbox6 = new global::Gtk.HBox();
 		this.hbox6.Name = "hbox6";
 		this.hbox6.Homogeneous = true;
 		this.hbox6.BorderWidth = ((uint)(1));
 		// Container child hbox6.Gtk.Box+BoxChild
-		this.btnTagBarOption = new global::Gtk.ToggleButton ();
+		this.btnTagBarOption = new global::Gtk.ToggleButton();
 		this.btnTagBarOption.CanFocus = true;
 		this.btnTagBarOption.Name = "btnTagBarOption";
 		this.btnTagBarOption.UseUnderline = true;
 		this.btnTagBarOption.Active = true;
-		this.btnTagBarOption.Label = global::Mono.Unix.Catalog.GetString ("Tags");
-		global::Gtk.Image w58 = new global::Gtk.Image ();
-		w58.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-paste", global::Gtk.IconSize.Menu);
+		this.btnTagBarOption.Label = global::Mono.Unix.Catalog.GetString("Tags");
+		global::Gtk.Image w58 = new global::Gtk.Image();
+		w58.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-paste", global::Gtk.IconSize.Menu);
 		this.btnTagBarOption.Image = w58;
-		this.hbox6.Add (this.btnTagBarOption);
-		global::Gtk.Box.BoxChild w59 = ((global::Gtk.Box.BoxChild)(this.hbox6 [this.btnTagBarOption]));
+		this.hbox6.Add(this.btnTagBarOption);
+		global::Gtk.Box.BoxChild w59 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.btnTagBarOption]));
 		w59.Position = 0;
 		// Container child hbox6.Gtk.Box+BoxChild
-		this.btnChordBarOption = new global::Gtk.ToggleButton ();
+		this.btnChordBarOption = new global::Gtk.ToggleButton();
 		this.btnChordBarOption.CanFocus = true;
 		this.btnChordBarOption.Name = "btnChordBarOption";
 		this.btnChordBarOption.UseUnderline = true;
-		this.btnChordBarOption.Label = global::Mono.Unix.Catalog.GetString ("Chords");
-		global::Gtk.Image w60 = new global::Gtk.Image ();
-		w60.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-paste", global::Gtk.IconSize.Menu);
+		this.btnChordBarOption.Label = global::Mono.Unix.Catalog.GetString("Chords");
+		global::Gtk.Image w60 = new global::Gtk.Image();
+		w60.Pixbuf = global::Stetic.IconLoader.LoadIcon(this, "gtk-paste", global::Gtk.IconSize.Menu);
 		this.btnChordBarOption.Image = w60;
-		this.hbox6.Add (this.btnChordBarOption);
-		global::Gtk.Box.BoxChild w61 = ((global::Gtk.Box.BoxChild)(this.hbox6 [this.btnChordBarOption]));
+		this.hbox6.Add(this.btnChordBarOption);
+		global::Gtk.Box.BoxChild w61 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.btnChordBarOption]));
 		w61.Position = 1;
-		this.panelTagBar.Add (this.hbox6);
-		global::Gtk.Box.BoxChild w62 = ((global::Gtk.Box.BoxChild)(this.panelTagBar [this.hbox6]));
+		this.panelTagBar.Add(this.hbox6);
+		global::Gtk.Box.BoxChild w62 = ((global::Gtk.Box.BoxChild)(this.panelTagBar[this.hbox6]));
 		w62.Position = 1;
 		w62.Expand = false;
 		w62.Fill = false;
 		// Container child panelTagBar.Gtk.Box+BoxChild
-		this.hseparator1 = new global::Gtk.HSeparator ();
+		this.hseparator1 = new global::Gtk.HSeparator();
 		this.hseparator1.Name = "hseparator1";
-		this.panelTagBar.Add (this.hseparator1);
-		global::Gtk.Box.BoxChild w63 = ((global::Gtk.Box.BoxChild)(this.panelTagBar [this.hseparator1]));
+		this.panelTagBar.Add(this.hseparator1);
+		global::Gtk.Box.BoxChild w63 = ((global::Gtk.Box.BoxChild)(this.panelTagBar[this.hseparator1]));
 		w63.Position = 2;
 		w63.Expand = false;
 		w63.Fill = false;
-		this.hbox18.Add (this.panelTagBar);
-		global::Gtk.Box.BoxChild w64 = ((global::Gtk.Box.BoxChild)(this.hbox18 [this.panelTagBar]));
+		this.hbox18.Add(this.panelTagBar);
+		global::Gtk.Box.BoxChild w64 = ((global::Gtk.Box.BoxChild)(this.hbox18[this.panelTagBar]));
 		w64.Position = 1;
 		w64.Expand = false;
 		w64.Fill = false;
 		w64.Padding = ((uint)(6));
-		this.editorPanel.Add (this.hbox18);
-		global::Gtk.Box.BoxChild w65 = ((global::Gtk.Box.BoxChild)(this.editorPanel [this.hbox18]));
+		this.editorPanel.Add(this.hbox18);
+		global::Gtk.Box.BoxChild w65 = ((global::Gtk.Box.BoxChild)(this.editorPanel[this.hbox18]));
 		w65.Position = 1;
-		this.mainDivider.Add (this.editorPanel);
-		global::Gtk.Paned.PanedChild w66 = ((global::Gtk.Paned.PanedChild)(this.mainDivider [this.editorPanel]));
+		this.mainDivider.Add(this.editorPanel);
+		global::Gtk.Paned.PanedChild w66 = ((global::Gtk.Paned.PanedChild)(this.mainDivider[this.editorPanel]));
 		w66.Resize = false;
 		// Container child mainDivider.Gtk.Paned+PanedChild
-		this.previewPane = new global::Gtk.Notebook ();
+		this.previewPane = new global::Gtk.Notebook();
 		this.previewPane.CanFocus = true;
 		this.previewPane.Name = "previewPane";
 		this.previewPane.CurrentPage = 1;
 		// Container child previewPane.Gtk.Notebook+NotebookChild
-		this.GtkScrolledWindow1 = new global::Gtk.ScrolledWindow ();
+		this.GtkScrolledWindow1 = new global::Gtk.ScrolledWindow();
 		this.GtkScrolledWindow1.Name = "GtkScrolledWindow1";
 		this.GtkScrolledWindow1.ShadowType = ((global::Gtk.ShadowType)(1));
 		// Container child GtkScrolledWindow1.Gtk.Container+ContainerChild
-		global::Gtk.Viewport w67 = new global::Gtk.Viewport ();
+		global::Gtk.Viewport w67 = new global::Gtk.Viewport();
 		w67.ShadowType = ((global::Gtk.ShadowType)(0));
 		// Container child GtkViewport.Gtk.Container+ContainerChild
-		this.drawingArea = new global::Gtk.DrawingArea ();
+		this.drawingArea = new global::Gtk.DrawingArea();
 		this.drawingArea.Name = "drawingArea";
-		w67.Add (this.drawingArea);
-		this.GtkScrolledWindow1.Add (w67);
-		this.previewPane.Add (this.GtkScrolledWindow1);
+		w67.Add(this.drawingArea);
+		this.GtkScrolledWindow1.Add(w67);
+		this.previewPane.Add(this.GtkScrolledWindow1);
 		// Notebook tab
-		this.label1 = new global::Gtk.Label ();
+		this.label1 = new global::Gtk.Label();
 		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Print View");
-		this.previewPane.SetTabLabel (this.GtkScrolledWindow1, this.label1);
-		this.label1.ShowAll ();
+		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("Print View");
+		this.previewPane.SetTabLabel(this.GtkScrolledWindow1, this.label1);
+		this.label1.ShowAll();
 		// Container child previewPane.Gtk.Notebook+NotebookChild
-		this.GtkScrolledWindow2 = new global::Gtk.ScrolledWindow ();
+		this.GtkScrolledWindow2 = new global::Gtk.ScrolledWindow();
 		this.GtkScrolledWindow2.Name = "GtkScrolledWindow2";
 		this.GtkScrolledWindow2.ShadowType = ((global::Gtk.ShadowType)(1));
 		// Container child GtkScrolledWindow2.Gtk.Container+ContainerChild
-		this.txtTextView = new global::Gtk.TextView ();
+		this.txtTextView = new global::Gtk.TextView();
 		this.txtTextView.CanFocus = true;
 		this.txtTextView.Name = "txtTextView";
-		this.GtkScrolledWindow2.Add (this.txtTextView);
-		this.previewPane.Add (this.GtkScrolledWindow2);
-		global::Gtk.Notebook.NotebookChild w72 = ((global::Gtk.Notebook.NotebookChild)(this.previewPane [this.GtkScrolledWindow2]));
+		this.GtkScrolledWindow2.Add(this.txtTextView);
+		this.previewPane.Add(this.GtkScrolledWindow2);
+		global::Gtk.Notebook.NotebookChild w72 = ((global::Gtk.Notebook.NotebookChild)(this.previewPane[this.GtkScrolledWindow2]));
 		w72.Position = 1;
 		// Notebook tab
-		this.label11 = new global::Gtk.Label ();
+		this.label11 = new global::Gtk.Label();
 		this.label11.Name = "label11";
-		this.label11.LabelProp = global::Mono.Unix.Catalog.GetString ("Text View");
-		this.previewPane.SetTabLabel (this.GtkScrolledWindow2, this.label11);
-		this.label11.ShowAll ();
-		this.mainDivider.Add (this.previewPane);
-		this.vbox1.Add (this.mainDivider);
-		global::Gtk.Box.BoxChild w74 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.mainDivider]));
+		this.label11.LabelProp = global::Mono.Unix.Catalog.GetString("Text View");
+		this.previewPane.SetTabLabel(this.GtkScrolledWindow2, this.label11);
+		this.label11.ShowAll();
+		this.mainDivider.Add(this.previewPane);
+		this.vbox1.Add(this.mainDivider);
+		global::Gtk.Box.BoxChild w74 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.mainDivider]));
 		w74.Position = 1;
-		this.hbox17.Add (this.vbox1);
-		global::Gtk.Box.BoxChild w75 = ((global::Gtk.Box.BoxChild)(this.hbox17 [this.vbox1]));
+		this.hbox17.Add(this.vbox1);
+		global::Gtk.Box.BoxChild w75 = ((global::Gtk.Box.BoxChild)(this.hbox17[this.vbox1]));
 		w75.Position = 0;
-		this.mainPanel.Add (this.hbox17);
-		global::Gtk.Box.BoxChild w76 = ((global::Gtk.Box.BoxChild)(this.mainPanel [this.hbox17]));
+		this.mainPanel.Add(this.hbox17);
+		global::Gtk.Box.BoxChild w76 = ((global::Gtk.Box.BoxChild)(this.mainPanel[this.hbox17]));
 		w76.Position = 0;
-		this.Add (this.mainPanel);
-		if ((this.Child != null)) {
-			this.Child.ShowAll ();
+		this.Add(this.mainPanel);
+		if ((this.Child != null))
+		{
+			this.Child.ShowAll();
 		}
 		this.DefaultWidth = 1157;
 		this.DefaultHeight = 721;
-		this.Show ();
-		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
-		this.newAction.Activated += new global::System.EventHandler (this.on_NewSongActivated);
-		this.openAction.Activated += new global::System.EventHandler (this.on_OpenSongFile);
-		this.saveAction.Activated += new global::System.EventHandler (this.on_SaveSongFile);
-		this.saveAsAction.Activated += new global::System.EventHandler (this.on_SaveSongFileAs);
-		this.printPreviewAction.Activated += new global::System.EventHandler (this.on_printPreviewAction_Activated);
-		this.printAction.Activated += new global::System.EventHandler (this.on_printAction_Activated);
-		this.propertiesAction.Activated += new global::System.EventHandler (this.on_settingsAction_Activated);
-		this.ExitAction.Activated += new global::System.EventHandler (this.on_Exit);
-		this.TagChordBarAction.Toggled += new global::System.EventHandler (this.on_TagChordBarAction_Toggle);
-		this.undoAction.Activated += new global::System.EventHandler (this.on_undoAction_Click);
-		this.redoAction.Activated += new global::System.EventHandler (this.on_redoAction_Click);
-		this.copyAction.Activated += new global::System.EventHandler (this.on_copyAction_Activated);
-		this.cutAction.Activated += new global::System.EventHandler (this.on_cutAction_Activated);
-		this.pasteAction.Activated += new global::System.EventHandler (this.on_pasteAction_Activated);
-		this.btnShowInfo.Clicked += new global::System.EventHandler (this.on_btnSongInfo_Toggled);
-		this.btnOpen.Clicked += new global::System.EventHandler (this.on_btnOpen_Clicked);
-		this.btnSave.Clicked += new global::System.EventHandler (this.on_btnSave_Clicked);
-		this.btnPrintPreview.Clicked += new global::System.EventHandler (this.on_btnPrintPreview_Clicked);
-		this.btnPrint.Clicked += new global::System.EventHandler (this.on_btnPrint_Clicked);
-		this.btnUndo.Clicked += new global::System.EventHandler (this.on_btnUndoAction_Clicked);
-		this.btnRedo.Clicked += new global::System.EventHandler (this.on_btnRedo_Clicked);
-		this.btnCut.Clicked += new global::System.EventHandler (this.on_btnCut_Click);
-		this.btnCopy.Clicked += new global::System.EventHandler (this.on_btnCopy_Click);
-		this.btnPaste.Clicked += new global::System.EventHandler (this.on_btnPaste_Click);
-		this.btnTransposeDown.Clicked += new global::System.EventHandler (this.on_btnTransposeDown_clicked);
-		this.btnTransposeUp.Clicked += new global::System.EventHandler (this.on_btnTransposeUp_clicked);
-		this.chkUseSharps.Clicked += new global::System.EventHandler (this.onChkUseSharps);
-		this.txtTitle.Changed += new global::System.EventHandler (this.on_txtTitle_Changed);
-		this.txtArtist.Changed += new global::System.EventHandler (this.on_txtArtist_Changed);
-		this.txtCopyright.Changed += new global::System.EventHandler (this.on_txtCopyright_Changed);
-		this.txtCCLI.Changed += new global::System.EventHandler (this.on_txtCCLI_Changed);
-		this.txtKey.Changed += new global::System.EventHandler (this.on_txtKey_Changed);
-		this.txtCapo.Changed += new global::System.EventHandler (this.on_txtCapo_Changed);
-		this.txtEditor.KeyPressEvent += new global::Gtk.KeyPressEventHandler (this.on_txtEditor_KeyPress);
-		this.btnTagBarOption.Clicked += new global::System.EventHandler (this.on_btnTagBarOption_Clicked);
-		this.btnChordBarOption.Clicked += new global::System.EventHandler (this.on_btnChordBarOption_Clicked);
+		this.Show();
+		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.newAction.Activated += new global::System.EventHandler(this.on_NewSongActivated);
+		this.openAction.Activated += new global::System.EventHandler(this.on_OpenSongFile);
+		this.saveAction.Activated += new global::System.EventHandler(this.on_SaveSongFile);
+		this.saveAsAction.Activated += new global::System.EventHandler(this.on_SaveSongFileAs);
+		this.printPreviewAction.Activated += new global::System.EventHandler(this.on_printPreviewAction_Activated);
+		this.printAction.Activated += new global::System.EventHandler(this.on_printAction_Activated);
+		this.propertiesAction.Activated += new global::System.EventHandler(this.on_settingsAction_Activated);
+		this.ExitAction.Activated += new global::System.EventHandler(this.on_Exit);
+		this.TagChordBarAction.Toggled += new global::System.EventHandler(this.on_TagChordBarAction_Toggle);
+		this.undoAction.Activated += new global::System.EventHandler(this.on_undoAction_Click);
+		this.redoAction.Activated += new global::System.EventHandler(this.on_redoAction_Click);
+		this.copyAction.Activated += new global::System.EventHandler(this.on_copyAction_Activated);
+		this.cutAction.Activated += new global::System.EventHandler(this.on_cutAction_Activated);
+		this.pasteAction.Activated += new global::System.EventHandler(this.on_pasteAction_Activated);
+		this.btnShowInfo.Clicked += new global::System.EventHandler(this.on_btnSongInfo_Toggled);
+		this.btnOpen.Clicked += new global::System.EventHandler(this.on_btnOpen_Clicked);
+		this.btnSave.Clicked += new global::System.EventHandler(this.on_btnSave_Clicked);
+		this.btnPrintPreview.Clicked += new global::System.EventHandler(this.on_btnPrintPreview_Clicked);
+		this.btnPrint.Clicked += new global::System.EventHandler(this.on_btnPrint_Clicked);
+		this.btnUndo.Clicked += new global::System.EventHandler(this.on_btnUndoAction_Clicked);
+		this.btnRedo.Clicked += new global::System.EventHandler(this.on_btnRedo_Clicked);
+		this.btnCut.Clicked += new global::System.EventHandler(this.on_btnCut_Click);
+		this.btnCopy.Clicked += new global::System.EventHandler(this.on_btnCopy_Click);
+		this.btnPaste.Clicked += new global::System.EventHandler(this.on_btnPaste_Click);
+		this.btnTransposeDown.Clicked += new global::System.EventHandler(this.on_btnTransposeDown_clicked);
+		this.btnTransposeUp.Clicked += new global::System.EventHandler(this.on_btnTransposeUp_clicked);
+		this.chkUseSharps.Clicked += new global::System.EventHandler(this.onChkUseSharps);
+		this.txtTitle.Changed += new global::System.EventHandler(this.on_txtTitle_Changed);
+		this.txtArtist.Changed += new global::System.EventHandler(this.on_txtArtist_Changed);
+		this.txtCopyright.Changed += new global::System.EventHandler(this.on_txtCopyright_Changed);
+		this.txtCCLI.Changed += new global::System.EventHandler(this.on_txtCCLI_Changed);
+		this.txtKey.Changed += new global::System.EventHandler(this.on_txtKey_Changed);
+		this.txtCapo.Changed += new global::System.EventHandler(this.on_txtCapo_Changed);
+		this.txtEditor.KeyPressEvent += new global::Gtk.KeyPressEventHandler(this.on_txtEditor_KeyPress);
+		this.btnTagBarOption.Clicked += new global::System.EventHandler(this.on_btnTagBarOption_Clicked);
+		this.btnChordBarOption.Clicked += new global::System.EventHandler(this.on_btnChordBarOption_Clicked);
 	}
 }

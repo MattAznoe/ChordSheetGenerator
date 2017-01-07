@@ -19,7 +19,7 @@ namespace CSGen.Operations
         public Config ()
         {
             string folder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            _iniPath = string.Format ("{0}{1}{2}", folder, System.IO.Path.DirectorySeparatorChar, "CSGen.ini");
+            _iniPath = Path.Combine(folder, "ChordSheetGenerator", "CSGen.ini");
 
             // Make sure that the ini file exists.
             if (!File.Exists (_iniPath))
