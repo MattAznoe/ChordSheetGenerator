@@ -242,6 +242,7 @@ public partial class MainWindow
 		this.Title = global::Mono.Unix.Catalog.GetString("Chord Sheet Generator");
 		this.Icon = global::Gdk.Pixbuf.LoadFromResource("CSGen.chordsheetgen.png");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+		this.BorderWidth = ((uint)(5));
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.mainPanel = new global::Gtk.VBox();
 		this.mainPanel.Name = "mainPanel";
@@ -278,7 +279,6 @@ public partial class MainWindow
 		this.hbox19.Spacing = 6;
 		// Container child hbox19.Gtk.Box+BoxChild
 		this.panelToolbar = new global::Gtk.HBox();
-		this.panelToolbar.HeightRequest = 30;
 		this.panelToolbar.Name = "panelToolbar";
 		this.panelToolbar.Spacing = 2;
 		this.panelToolbar.BorderWidth = ((uint)(1));

@@ -9,6 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>CSGen</RootNamespace>
     <AssemblyName>ChordSheetGenerator</AssemblyName>
+    <ApplicationIcon>chordsheetgen_nta_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,6 +77,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="chordsheetgen.png">
       <DeployService-UseProjectRelativePath>True</DeployService-UseProjectRelativePath>
+      <DeployService.Deploy>true</DeployService.Deploy>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -124,5 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ToDo.txt" />
+    <None Include="chordsheetgen_nta_icon.ico" />
   </ItemGroup>
 </Project>

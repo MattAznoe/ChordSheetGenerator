@@ -162,6 +162,7 @@
     <property name="Title" translatable="yes">Chord Sheet Generator</property>
     <property name="Icon">resource:CSGen.chordsheetgen.png</property>
     <property name="WindowPosition">CenterOnParent</property>
+    <property name="BorderWidth">5</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
       <widget class="Gtk.VBox" id="mainPanel">
@@ -230,7 +231,6 @@
                             <child>
                               <widget class="Gtk.HBox" id="panelToolbar">
                                 <property name="MemberName" />
-                                <property name="HeightRequest">30</property>
                                 <property name="Spacing">2</property>
                                 <property name="BorderWidth">1</property>
                                 <child>
@@ -980,9 +980,9 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Dialog" id="CSGen.SettingsDialog" design-size="899 408">
+  <widget class="Gtk.Dialog" id="CSGen.SettingsDialog" design-size="900 408">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">window1</property>
+    <property name="Title" translatable="yes">Settings</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
     <property name="AllowGrow">False</property>
