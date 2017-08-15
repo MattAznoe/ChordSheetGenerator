@@ -118,7 +118,6 @@ namespace CSGen
 			// Widget CSGen.SettingsDialog
 			this.Name = "CSGen.SettingsDialog";
 			this.Title = global::Mono.Unix.Catalog.GetString("Settings");
-			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.Resizable = false;
 			this.AllowGrow = false;
 			// Internal child CSGen.SettingsDialog.VBox
@@ -129,7 +128,7 @@ namespace CSGen
 			this.settingsPane = new global::Gtk.Notebook();
 			this.settingsPane.CanFocus = true;
 			this.settingsPane.Name = "settingsPane";
-			this.settingsPane.CurrentPage = 0;
+			this.settingsPane.CurrentPage = 1;
 			// Container child settingsPane.Gtk.Notebook+NotebookChild
 			this.vbox3 = new global::Gtk.VBox();
 			this.vbox3.Name = "vbox3";
@@ -284,6 +283,8 @@ namespace CSGen
 			this.vbox2.Add(this.frame1);
 			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.frame1]));
 			w17.Position = 0;
+			w17.Expand = false;
+			w17.Fill = false;
 			this.settingsPane.Add(this.vbox2);
 			global::Gtk.Notebook.NotebookChild w18 = ((global::Gtk.Notebook.NotebookChild)(this.settingsPane[this.vbox2]));
 			w18.Position = 1;
@@ -544,6 +545,7 @@ namespace CSGen
 			this.settingsPane.Add(this.vbox4);
 			global::Gtk.Notebook.NotebookChild w47 = ((global::Gtk.Notebook.NotebookChild)(this.settingsPane[this.vbox4]));
 			w47.Position = 2;
+			w47.TabFill = false;
 			// Notebook tab
 			this.label2 = new global::Gtk.Label();
 			this.label2.Name = "label2";
@@ -588,8 +590,8 @@ namespace CSGen
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 900;
-			this.DefaultHeight = 408;
+			this.DefaultWidth = 670;
+			this.DefaultHeight = 392;
 			this.Show();
 			this.defaultFolder.SelectionChanged += new global::System.EventHandler(this.on_defaultFolder_SelectionChanged);
 			this.chkShowHeader.Toggled += new global::System.EventHandler(this.on_ShowHeaderToggle);
